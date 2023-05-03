@@ -1,0 +1,41 @@
+{
+    "$schema": "https://json-schema.org/draft/2019-09/schema",
+    "$id": "http://example.com/example.json",
+    "type": "object",
+    "default": {},
+    "title": "Root Schema",
+    "required": [],
+    "minProperties": 1,
+    "additionalProperties": false,
+    "properties": {
+        "title": {
+            "type": "string",
+            "default": "",
+            "title": "The title Schema",
+            "examples": [
+                "Unit1"
+            ]
+        },
+        "lessonOrder": {
+            "type": "integer",
+            "default": 0,
+            "title": "The lessonOrder Schema",
+            "examples": [
+                3
+            ]
+        },
+        "lessonURL": {
+            "type": "string",
+            "default": "",
+            "title": "The lessonURL Schema",
+            "examples": [
+                "lesson.com"
+            ]
+        }
+    },
+    "examples": [{
+        "title": "Unit1",
+        "lessonOrder": 3,
+        "lessonURL": "lesson.com"
+    }]
+}

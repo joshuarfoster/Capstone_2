@@ -1,0 +1,44 @@
+{
+    "$schema": "https://json-schema.org/draft/2019-09/schema",
+    "$id": "http://example.com/example.json",
+    "type": "object",
+    "default": {},
+    "title": "Root Schema",
+    "required": [
+        "title",
+        "courseId",
+        "unitOrder"
+    ],
+    "additionalProperties": false,
+    "properties": {
+        "title": {
+            "type": "string",
+            "default": "",
+            "title": "The title Schema",
+            "examples": [
+                "Unit1"
+            ]
+        },
+        "courseId": {
+            "type": "integer",
+            "default": 0,
+            "title": "The courseId Schema",
+            "examples": [
+                765
+            ]
+        },
+        "unitOrder": {
+            "type": "integer",
+            "default": 0,
+            "title": "The unit_order Schema",
+            "examples": [
+                2
+            ]
+        }
+    },
+    "examples": [{
+        "title": "Unit1",
+        "courseId": 765,
+        "unit_order": 2
+    }]
+}

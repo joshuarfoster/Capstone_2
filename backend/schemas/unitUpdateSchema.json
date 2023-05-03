@@ -1,0 +1,32 @@
+{
+    "$schema": "https://json-schema.org/draft/2019-09/schema",
+    "$id": "http://example.com/example.json",
+    "type": "object",
+    "default": {},
+    "title": "Root Schema",
+    "required": [],
+    "minProperties": 1,
+    "additionalProperties": false,
+    "properties": {
+        "title": {
+            "type": "string",
+            "default": "",
+            "title": "The title Schema",
+            "examples": [
+                "Unit1"
+            ]
+        },
+        "unitOrder": {
+            "type": "integer",
+            "default": 0,
+            "title": "The unitOrder Schema",
+            "examples": [
+                2
+            ]
+        }
+    },
+    "examples": [{
+        "title": "Unit1",
+        "unit_order": 2
+    }]
+}

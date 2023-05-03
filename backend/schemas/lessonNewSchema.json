@@ -1,0 +1,64 @@
+{
+    "$schema": "https://json-schema.org/draft/2019-09/schema",
+    "$id": "http://example.com/example.json",
+    "type": "object",
+    "default": {},
+    "title": "Root Schema",
+    "required": [
+        "title",
+        "unitId",
+        "lessonOrder",
+        "lessonType",
+        "lessonURL"
+    ],
+    "additionalProperties": false,
+    "properties": {
+        "title": {
+            "type": "string",
+            "default": "",
+            "title": "The title Schema",
+            "examples": [
+                "Unit1"
+            ]
+        },
+        "unitId": {
+            "type": "integer",
+            "default": 0,
+            "title": "The unitId Schema",
+            "examples": [
+                2
+            ]
+        },
+        "lessonOrder": {
+            "type": "integer",
+            "default": 0,
+            "title": "The lessonOrder Schema",
+            "examples": [
+                3
+            ]
+        },
+        "lessonType": {
+            "type": "string",
+            "default": "",
+            "title": "The lessonType Schema",
+            "examples": [
+                "video"
+            ]
+        },
+        "lessonURL": {
+            "type": "string",
+            "default": "",
+            "title": "The lessonURL Schema",
+            "examples": [
+                "lesson.com"
+            ]
+        }
+    },
+    "examples": [{
+        "title": "Unit1",
+        "unitId": 2,
+        "lessonOrder": 3,
+        "lessonType": "video",
+        "lessonURL": "lesson.com"
+    }]
+}
