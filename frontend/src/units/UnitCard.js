@@ -26,9 +26,9 @@ function UnitCard({ makeActive, isActive, id, title, order, removeUnit, changeUn
   useEffect(function changeBackgroundColor() {
     if (!unitChangeActive){
       if(isActive){
-        setBackgroundColor('lightblue')
+        setBackgroundColor('gray')
       }else{
-        setBackgroundColor('white')
+        setBackgroundColor('#333')
       }
     }else{
       if(unitChangeId === id){
@@ -93,12 +93,20 @@ function UnitCard({ makeActive, isActive, id, title, order, removeUnit, changeUn
 
   return (
     <div>
-      <div style={{backgroundColor}} className="UnitCard card" onMouseEnter={() => setIsHovered(true)} onMouseLeave={() => setIsHovered(false)} onClick={onClickFunction}>
+      <div style={{backgroundColor}} className="UnitCard card dark" onMouseEnter={() => setIsHovered(true)} onMouseLeave={() => setIsHovered(false)} onClick={onClickFunction}>
         <div className="card-body">
           <h6 className="card-title">{title}</h6>
-          {!unitChangeActive && created && (<button type="button" onClick= {handleRemoveUnit} className="btn btn-danger btn-sm">&#128465;</button>)}
-          {!unitChangeActive && created && (<button type="button" onClick={activateForm} className="btn btn-outline-secondary btn-sm">&#9999;</button>)}
-          {!unitChangeActive && created && (<button type="button" onClick={handleActivateChangeOrder} className="btn btn-outline-warning btn-sm">&#8597;</button>)}
+          <div className="button-container"> {/* Add a container for the buttons */}
+            {!unitChangeActive && created && (
+              <button type="button" onClick={handleRemoveUnit} className="btn btn-danger btn-sm">&#128465;</button>
+            )}
+            {!unitChangeActive && created && (
+              <button type="button" onClick={activateForm} className="btn btn-outline-secondary btn-sm">&#9999;</button>
+            )}
+            {!unitChangeActive && created && (
+              <button type="button" onClick={handleActivateChangeOrder} className="btn btn-outline-warning btn-sm">&#8597;</button>
+            )}
+          </div>
         </div>
       </div>
       {titleFormActive && (<UnitEditTitleForm id={id} title={title} setActive={setTitleFormActive} changeUnitTitle={changeUnitTitle}/>)}

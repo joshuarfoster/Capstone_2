@@ -23,6 +23,7 @@ class YoutubeAPI {
         }
       }
 
+    //   (?<=watch\?v=|\/videos\/|embed\/|youtu.be\/|\/v\/|watch\?v%3D|%2Fvideos%2F|embed%2F|youtu.be%2F|%2Fv%2F)[^#\&\?\n]*
     static getId(link) {
         let match = link.match(/youtube\.com\/embed\/([a-zA-Z0-9_-]+)/);
         if (match) {

@@ -1,0 +1,59 @@
+.SignupForm {
+    background-color: #222;
+    color: #fff;
+    padding: 20px;
+  }
+  
+  .SignupForm h2 {
+    color: #fff;
+  }
+  
+  .SignupForm .card {
+    background-color: #333;
+    border-radius: 0;
+    border: none;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  }
+  
+  .SignupForm .card-body {
+    padding: 20px;
+  }
+  
+  .SignupForm label {
+    color: #fff;
+  }
+  
+  .SignupForm input {
+    background-color: #333;
+    color: #fff;
+  }
+  
+  .SignupForm .btn-primary {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+  }
+  
+  .SignupForm .btn-primary:hover {
+    background-color: #0056b3;
+  }
+  
+  .SignupForm .btn-primary:active,
+  .SignupForm .btn-primary:focus {
+    background-color: #007bff;
+  }
+  
+  .SignupForm .form-group {
+    margin-bottom: 20px;
+  }
+  
+  .SignupForm .alert {
+    margin-top: 20px;
+  }
+  
+  .SignupForm .alert-danger {
+    background-color: #dc3545;
+    color: #fff;
+    border-color: #dc3545;
+  }
+  

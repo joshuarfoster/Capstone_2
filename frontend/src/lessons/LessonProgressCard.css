@@ -1,8 +1,48 @@
 .LessonProgressCard {
-    max-height: 500px;
-    margin-bottom: 1rem;
-    color: inherit;
-    border-radius: 0;
-    border: none;
-    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
-  }
+  max-height: 500px;
+  margin-bottom: 1rem;
+  color: #fff;
+  background-color: #333;
+  border-radius: 0;
+  border: none;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+}
+
+.LessonProgressCard .card-body {
+  position: relative;
+}
+
+.LessonProgressCard .card-title {
+  display: inline-block;
+  margin-bottom: 10px;
+}
+
+
+.LessonProgressCard iframe {
+  border: none;
+}
+
+.LessonProgressCard .formGroup label {
+  color: #fff;
+}
+
+.LessonProgressCard .formGroup .form-control {
+  background-color: #333;
+  color: #fff;
+}
+
+.LessonProgressCard .btn-group {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+
+
+.LessonProgressCard button {
+  color: #fff;
+  background-color: #555;
+  margin-right: 5px;
+  margin-bottom: 5px;
+}
+

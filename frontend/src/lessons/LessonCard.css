@@ -1,8 +1,47 @@
 .LessonCard {
-    max-height: 500px;
-    margin-bottom: 1rem;
-    color: inherit;
-    border-radius: 0;
-    border: none;
-    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
-  }
+  max-height: 400px;
+  width: 100%;
+  margin-bottom: 1rem;
+  color: #fff;
+  background-color: #333;
+  border-radius: 0;
+  border: none;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+}
+
+
+.LessonCard .card-body {
+  position: relative;
+}
+
+.LessonCard .card-title {
+  display: inline-block;
+  margin-bottom: 10px;
+}
+
+
+.LessonCard iframe {
+  border: none;
+}
+
+.LessonCard .formGroup label {
+  color: #fff;
+}
+
+.LessonCard .formGroup .form-control {
+  background-color: #333;
+  color: #fff;
+}
+
+.LessonCard .btn-group {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.LessonCard button {
+  color: #fff;
+  background-color: #555;
+  margin-right: 5px;
+  margin-bottom: 5px;
+}

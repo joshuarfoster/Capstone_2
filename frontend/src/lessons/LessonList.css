@@ -1,0 +1,21 @@
+.LessonList {
+    background-color: #222;
+    color: #fff;
+    padding: 10px;
+  }
+  
+  
+  .LessonList .formGroup .form-control {
+    background-color: #333;
+    color: #fff;
+  }
+
+  .LessonCard button:hover,
+  .LessonProgressCard button:hover {
+    background-color: #777;
+  }
+  
+
+  body {
+    color: #fff;
+  }

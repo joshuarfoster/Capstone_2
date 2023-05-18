@@ -1,0 +1,59 @@
+.LoginForm {
+    background-color: #222;
+    color: #fff;
+    padding: 20px;
+  }
+  
+  .LoginForm h3 {
+    color: #fff;
+  }
+  
+  .LoginForm .card {
+    background-color: #333;
+    border-radius: 0;
+    border: none;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  }
+  
+  .LoginForm .card-body {
+    padding: 20px;
+  }
+  
+  .LoginForm label {
+    color: #fff;
+  }
+  
+  .LoginForm input {
+    background-color: #333;
+    color: #fff;
+  }
+  
+  .LoginForm .btn-primary {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+  }
+  
+  .LoginForm .btn-primary:hover {
+    background-color: #0056b3;
+  }
+  
+  .LoginForm .btn-primary:active,
+  .LoginForm .btn-primary:focus {
+    background-color: #007bff;
+  }
+  
+  .LoginForm .form-group {
+    margin-bottom: 20px;
+  }
+  
+  .LoginForm .alert {
+    margin-top: 20px;
+  }
+  
+  .LoginForm .alert-danger {
+    background-color: #dc3545;
+    color: #fff;
+    border-color: #dc3545;
+  }
+  

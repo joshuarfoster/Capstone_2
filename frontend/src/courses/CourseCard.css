@@ -3,7 +3,8 @@
   width: 100%;
   margin-right: 10px;
   margin-bottom: 10px;
-  color: inherit;
+  color: #fff; /* Set text color to white */
+  background-color: #222; /* Set background color to dark */
   border-radius: 0;
   border: none;
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
@@ -12,4 +13,29 @@
 .CourseCard:hover {
   text-decoration: none;
   box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+}
+
+.CourseCard .card-body {
+  padding: 10px;
+}
+
+.CourseCard .card-title {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+}
+
+.CourseCard p {
+  margin-bottom: 5px;
+}
+
+.CourseCard small {
+  color: #aaa; /* Set small text color to light gray */
+}
+
+.CourseCard button {
+  margin-right: 5px;
+}
+
+.CourseCard:hover .card-title {
+  color: red;
 }

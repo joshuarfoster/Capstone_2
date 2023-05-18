@@ -1,9 +1,28 @@
 .Navigation {
-    background-color: white;
-    border-bottom: 2px solid rgba(0, 0, 0, 0.125);
-  }
-  
-  .nav-link.active {
-    font-weight: bold;
-    color: black;
-  }
+  background-color: #222;
+  color: #fff;
+  border-bottom: 2px solid rgba(255, 255, 255, 0.125);
+}
+
+.nav-link {
+  color: #fff;
+  transition: color 0.3s; /* Add transition for smooth color change */
+}
+
+.nav-link:hover {
+  color: #b30000; /* Change the hover color to a specific shade of red */
+}
+
+.nav-link.active {
+  font-weight: bold;
+  color: #fff;
+}
+
+.navbar-brand {
+  font-weight: bold;
+  color: #ff0000; /* Use a bright red color */
+}
+
+.navbar-brand:hover {
+  color: #ff0000; /* Maintain the bright red color on hover */
+}

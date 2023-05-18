@@ -1,2 +1,21 @@
 
+.button-container {
+    display: flex;
+    gap: 5px; /* Add some spacing between buttons */
+  }
+
+  .UnitCard {
+    background-color: #333;
+    color: #fff;
+  }
+  
+  .UnitCard.card-title {
+    color: #fff;
+  }
+  
+  .UnitCard .card-body button {
+    color: #fff;
+    background-color: #555;
+  }
+  
   

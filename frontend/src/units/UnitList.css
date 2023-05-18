@@ -1,23 +1,37 @@
 .list-group {
-    position: fixed;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    width: 150px;
-    overflow-y: auto;
-    background-color: #f8f9fa;
-    padding: 10px;
-    z-index: 1;
-    margin-top: 80px; /* Add some margin between the top of the component and the navbar */
-  }
-  
-  
-  .list-group button {
-    display: block;
-    margin: 10px auto;
-  }
-  
-  .formGroup {
-    margin-top: 10px;
-  }
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  width: 150px;
+  overflow-y: auto;
+  background-color: #222;
+  padding: 10px;
+  z-index: 1;
+  margin-top: 80px;
+}
 
+.list-group button {
+  display: block;
+  margin: 10px auto;
+  color: #fff;
+  background-color: #555;
+}
+
+.list-group button:hover {
+  background-color: #777;
+}
+
+.formGroup {
+  margin-top: 10px;
+}
+
+.formGroup input,
+.formGroup button {
+  color: #fff;
+  background-color: #555;
+}
+
+.formGroup button:hover {
+  background-color: #777;
+}

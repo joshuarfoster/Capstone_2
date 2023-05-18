@@ -3,7 +3,7 @@ import LessonCard from "./LessonCard";
 import LessonProgressCard from "./LessonProgressCard"
 import CourseContext from "../courses/CourseContext";
 import YouTeachApi from "../api/api";
-
+import "./LessonList.css"
 /** Show list of Lesson cards.
  *
  * Used by UnitCard to list lessons.

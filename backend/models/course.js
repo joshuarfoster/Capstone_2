@@ -43,6 +43,10 @@ class Course {
         return coursesRes.rows;
     }
 
+    // static async filter(params) {
+
+    // }
+
     /** create course in database from data, return course data:
    *
    * {creator_username, title, about}
