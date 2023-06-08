@@ -89,7 +89,7 @@ function App() {
   /** Creates Course for User */
   async function makeCourse(data) {
     try{
-      data.creatorUsername = currentUser;
+      data.creatorUsername = currentUser.username;
       let course = await YouTeachApi.createCourse(data);
       setCreatedCourses(new Set([course.id, ...createdCourses]))
       return course

@@ -6,8 +6,7 @@
     "title": "Root Schema",
     "required": [
         "title",
-        "creatorUsername",
-        "about"
+        "creatorUsername"
     ],
     "additionalProperties": false,
     "properties": {

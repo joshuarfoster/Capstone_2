@@ -12,7 +12,14 @@ function Profile () {
     const [user, setUser] =useState(null);
     const [createdCourses, setCreatedCourses] =useState(null);
     const [savedCourses, setSavedCourses] =useState(null);
-    const [loaded, setLoaded] = useState(false)
+    const [loaded, setLoaded] = useState(false);
+    const [formActive, setFormActive] = useState(false)
+    const [formData, setFormData] =useState({
+        title: ''
+      })
+    
+
+    const makeCourse = useContext(UserContext).makeCourse
 
     useEffect(()=>{
         async function getUserDataonMount () {
@@ -33,6 +40,41 @@ function Profile () {
         getUserDataonMount();
     }, [])
 
+    async function createCourse(title){
+        const data = {
+            "title" : title
+        }
+        const course = await makeCourse(data)
+        setCreatedCourses([...createdCourses, course])
+    }
+    
+    function handleMakeCourse(e){
+        e.preventDefault();
+        createCourse(formData.title);
+        setFormActive(false)
+    }
+
+    function handleActivateForm(e){
+        e.preventDefault();
+        setFormActive(true);
+      }
+      
+      function handleCancel(e){
+        e.preventDefault(e);
+        setFormActive(false);
+        setFormData({
+          title:''
+        })
+      }
+
+      function handleChange (e) {
+        const {name, value} = e.target;
+        setFormData(fData => ({
+          ...fData,
+          [name]:value
+        }))
+      }
+
     return (
         <>
         <h1>{loaded && user.username}</h1>
@@ -42,6 +84,18 @@ function Profile () {
                 {loaded && (
                     <div className="card-container">
                         <CourseList courses={createdCourses}/>
+                        {!formActive && <button type="button" onClick={handleActivateForm} className="btn btn-success">+</button>}
+                        {formActive &&<form onSubmit={handleMakeCourse} className="formGroup">
+          <label>Title</label>
+          <input
+            name="title"
+            className="form-control"
+            value={formData.title}
+            onChange={handleChange}
+            />
+            <button type = "submit" className = "btn btn-primary">Submit</button>
+            <button className = "btn btn-danger" onClick={handleCancel}>Cancel</button>
+          </form>}
                     </div>)}
             </div>
             <div className="saved-courses">
