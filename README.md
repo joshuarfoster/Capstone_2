@@ -3,7 +3,7 @@ YouTube Course Formatter is a web application that enables users to transform in
 
 <h2>Features</h2>
 User authentication: Users can create accounts, log in, and log out.
-Course management: Users can create new courses, edit existing courses, and delete courses.
+Course management: Users can create new courses, edit existing courses, and delete courses.</br>
 Unit management: Users can add units to their courses, edit unit details, and remove units.
 YouTube video association: Users can search for YouTube videos and associate them with specific units in their courses.
 Course formatting: The application automatically fetches video details from YouTube and extracts relevant metadata such as title, duration, and thumbnail.
